@@ -1,0 +1,15 @@
+var arr = [2,67,67,2,48]
+
+console.log(findDup(arr,2))
+console.log(findDupIndex(arr))
+
+function findDup(array, item) {
+    return array.filter(element => element === item).length
+}
+
+function findDupIndex(arr){
+    //return arr.filter((e, i, a) => a.indexOf(e) !== i)
+    return arrt = arr.filter(function (value, index, array) { 
+        return array.indexOf(value) !== index;
+    });
+}
