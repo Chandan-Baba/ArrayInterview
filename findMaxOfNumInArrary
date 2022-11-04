@@ -1,0 +1,23 @@
+//Find the maximum number in an array of numbers
+
+
+let ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1]
+
+
+function maxNumInArray(ar)
+{
+    var positiveNums = ar.filter(el => el >0)
+    //return positiveNums
+    let maxNum = positiveNums[0]
+    for (let o in positiveNums)
+    {
+        if(positiveNums[o] > maxNum)
+        {
+           maxNum=  positiveNums[o]
+          
+        }
+    }
+     return maxNum
+}
+
+console.log(maxNumInArray(ar))
